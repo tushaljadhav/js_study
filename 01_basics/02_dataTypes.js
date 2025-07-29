@@ -1,5 +1,12 @@
 "use strict"; // treat all js code as newer version
 
+/*
+x = 10; // ❌ Error! x is not declared
+Without "use strict", this wouldn't throw an error.
+
+let age = 25; use this type of code */
+
+
 // alert(3 +3) // it give error because we are using node js , not browser 
 
 console.log( 3 
