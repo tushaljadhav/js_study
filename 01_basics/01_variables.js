@@ -24,3 +24,15 @@ console.table([account_email,account_password,account_city,account_state]);
 prefer not use var 
 because of issue in block scope and functional scope 
 */
+
+
+// ✅ 'const' is used for values that should NOT change
+const userId = 5001; // Cannot reassign this value
+
+// ✅ 'let' is used for values that CAN change later
+let userEmail = "tushal@gmail.com"; // Can be updated later
+
+// Example of updating 'let'
+userEmail = "updatedemail@gmail.com"; // ✅ This works
+
+// ❌ userId = 6002; // ❌ Error: Assignment to constant variable
