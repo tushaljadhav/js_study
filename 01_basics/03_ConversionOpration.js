@@ -43,3 +43,37 @@ let convert_value_5 = Number (value_5)
 console.log(convert_value_5,typeof (convert_value_5));
 // undefined => NaN , when we convert  undefined into  number then it show output NaN .
 
+// ********************************** Oprations ***************************************
+
+let value = 3
+let negvalue = -value
+console.log(negvalue);
+
+
+// console.log( 2 + 2 )
+// console.log( 2 - 2 )
+// console.log( 2 * 2 )
+// console.log( 2 ** 2 )
+// console.log( 2 / 2 )
+// console.log( 2 % 2 )
+
+
+let str1 = "tushal"
+let str2 = " jadhav"
+
+let str3 = str1 + str2 
+console.log(str3)
+
+console.log( "1" + 2 );
+console.log( 1 + "2" );
+console.log( "1" + 2 + 2 );
+console.log( 1 + 2 + "2" );
+
+
+console.log(+true); // it give 1 to output 
+console.log(+""); // it give 0
+
+num1 = num2 = num3 = 2 + 2
+
+
+
