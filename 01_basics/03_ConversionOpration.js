@@ -31,3 +31,15 @@ console.log(convert_value_3,typeof (convert_value_3));
 // "tushal" =>
 
 
+let value_4 = null
+let convert_value_4 = Number (value_4)
+console.log(convert_value_4,typeof (convert_value_4));
+// null => null , when we convert  null into somthing like number then it show output 0 .
+
+
+
+let value_5 = undefined
+let convert_value_5 = Number (value_5)
+console.log(convert_value_5,typeof (convert_value_5));
+// undefined => NaN , when we convert  undefined into  number then it show output NaN .
+
