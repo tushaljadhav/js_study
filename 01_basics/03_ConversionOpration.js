@@ -80,7 +80,7 @@ let gameCounter = 100
 console.log(gameCounter);
 
 // link to study
-
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
 
 
 
