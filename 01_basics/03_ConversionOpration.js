@@ -73,7 +73,7 @@ console.log( 1 + 2 + "2" );
 console.log(+true); // it give 1 to output 
 console.log(+""); // it give 0
 
-num1 = num2 = num3 = 2 + 2
+num1 = num2 = num3 = 2 + 2 // it is not good programing 
 
 let gameCounter = 100
 ++gameCounter;
