@@ -80,3 +80,36 @@ console.log(typeof heros); //typeof show datatype
 | BigInt          | typeof 10n                 | "bigint"        |
 | Symbol          | typeof Symbol("id")        | "symbol"        |
 */
+
+
+
+
+//++++++++++++++++++++++++++++++ Stack Memory (primitive) and Heap Memory (Non-Primitive) ++++++++++++++++++++
+
+
+//Stack Memory (Primitive): Stores data by value; changing the variable creates a copy without affecting the original.
+
+
+let myemail = "tushal123@gmail.com" // 1)here we create myemail variable and its value is tushal123@gmail.com
+
+let newemail = myemail //  2)we store myemail value in newemail 
+
+newemail = "jadhav123@gmail.com" // 3) now we are trying to change the value of myemail using newemail variable
+
+console.log(myemail); //  but orignal value is not change , it mean myemail give the copy value 
+console.log(newemail); // it show output changing value 
+
+
+// Heap Memory (Non-Primitive): Stores data by reference; changing the variable affects the original object.
+
+let user1 = {
+    email :"user@gmail.com" , // 1) here we create one object name ass user1 and it value is email : "user@gmail.com" 
+    upi : "user@ybl"
+
+}
+
+let user2 = user1 // 2) now we are reference the user1 to user2
+user2.email = "tushaljadhav@gmail.com" // 3) we change the email value using user2 
+
+console.log(user1.email); // it show fisrt email value 
+console.log(user2.email); // it show latest value we are changed , but here change the acctual value not copy value 
