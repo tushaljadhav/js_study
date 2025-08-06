@@ -1,2 +1,2 @@
 # js_study
-learning javascript form sctrach 
+Learning JavaScript from scratch
