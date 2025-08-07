@@ -51,3 +51,4 @@ jsUser.greetingtwo = function() {
 
 console.log(jsUser.greeting());       // calls first greeting method and logs message
 console.log(jsUser.greetingtwo());    // calls second greeting method with name
+
