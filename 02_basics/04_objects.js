@@ -56,3 +56,29 @@ console.log(Object.entries(tinderUser)); // Returns array of [key, value] pairs 
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); 
 // Checks if 'isLoggedIn' exists directly on the object (returns true)
+
+
+/*
+==================== 📌 Most Used & Important JavaScript Object Methods ====================
+
+| Method                          | Description                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| Object.keys(obj)                | Returns an array of all keys in the object                                  |
+| Object.values(obj)              | Returns an array of all values in the object                                |
+| Object.entries(obj)              | Returns an array of [key, value] pairs                                      |
+| Object.assign(target, ...src)   | Copies properties from source object(s) to a target object                  |
+| Object.freeze(obj)              | Makes object immutable (no changes allowed)                                 |
+| Object.seal(obj)                | Prevents adding/removing properties, but allows value changes               |
+| Object.hasOwn(obj, key)         | Checks if a key exists directly in the object (not inherited)               |
+| Object.create(proto)            | Creates a new object from the given prototype                               |
+| Object.getPrototypeOf(obj)      | Returns the prototype of the object                                         |
+| Object.setPrototypeOf(obj, proto)| Sets a new prototype for the object                                         |
+
+===========================================================================================
+💡 TIP:
+- keys / values / entries → For looping or extracting data
+- assign → For merging/cloning objects
+- freeze / seal → For securing object data
+- hasOwn → For property checking
+===========================================================================================
+*/
