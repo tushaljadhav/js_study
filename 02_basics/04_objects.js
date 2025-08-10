@@ -48,13 +48,13 @@ const obj4 = {...obj1, ...obj2, ...obj3}
 
 // +++++++++++++++++++++++ Object Methods +++++++++++++++++++++++
 
-console.log(tinderUser);                 // Prints the tinderUser object
+// console.log(tinderUser);                 // Prints the tinderUser object
 
-console.log(Object.keys(tinderUser));    // Returns array of keys → ["id", "name", "isLoggedIn"]
-console.log(Object.values(tinderUser));  // Returns array of values → ["123", "tushal", false]
-console.log(Object.entries(tinderUser)); // Returns array of [key, value] pairs → [["id","123"], ["name","tushal"], ["isLoggedIn", false]]
+// console.log(Object.keys(tinderUser));    // Returns array of keys → ["id", "name", "isLoggedIn"]
+// console.log(Object.values(tinderUser));  // Returns array of values → ["123", "tushal", false]
+// console.log(Object.entries(tinderUser)); // Returns array of [key, value] pairs → [["id","123"], ["name","tushal"], ["isLoggedIn", false]]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); 
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); 
 // Checks if 'isLoggedIn' exists directly on the object (returns true)
 
 
@@ -82,3 +82,20 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 - hasOwn → For property checking
 ===========================================================================================
 */
+
+
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor : "tushal"
+}
+
+// console.log(course.courseInstructor); 
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
