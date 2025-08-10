@@ -99,3 +99,17 @@ const {courseInstructor: instructor} = course
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+//api syntax
+
+// {
+//     "name": "tushal",
+//     "coursename": "js in hindi"
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
