@@ -79,3 +79,18 @@ function newfuncion(otherobejct) {
 // console.log(newfuncion(myarry)) // Output: 900
 console.log(newfuncion([10, 20, 30, 40, 50])); //passing arrays directly 
 // Output: 20
+
+
+/*
+--------------------------------------------------------------
+| Concept/Function Name  | Purpose                          | Example Call                         |
+|------------------------|----------------------------------|---------------------------------------|
+| Ref vs Execution       | Ref shows location, exec runs    | sayMyName / sayMyName()               |
+| addTwoNumbers          | Adds two numbers and returns sum | addTwoNumbers(4, 5)                   |
+| Default Parameters     | Uses fallback if arg missing     | loginUserMessage()                    |
+| Check (!username)      | Ensures argument is given        | loginUserMessage("")                  |
+| Rest Params (...num1)  | Collects extra args into array   | calculateCartPrice(200,500,900,1000)  |
+| Object to Function     | Uses object properties           | handleObject({username:"harsh",price:399}) |
+| Array to Function      | Uses array values                | newfuncion([10,20,30,40])             |
+--------------------------------------------------------------
+*/
