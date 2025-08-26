@@ -36,10 +36,24 @@ for (let i = 1; i <= 10 ; i++) {
 
 
 let myarray = ["tushal" , "avinash" , "aditya" ]
-console.log(myarray.length);
+// console.log(myarray.length);
 
 for (let index = 0; index < myarray.length; index++) {
     const element = myarray[index];
-    console.log(element);
+    // console.log(element);
+    
+}
+
+
+// break and continue 
+
+for (let i = 0; i <= 20; i++) {
+    if (i == 5) {
+        console.log("detected 5");
+        // break
+        continue
+    }
+    console.log(`value of i is ${i}`);
+    
     
 }
