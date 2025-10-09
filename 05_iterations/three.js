@@ -22,3 +22,30 @@ for (const my of myarry) {
     
     
 }
+
+
+// maps
+
+const map = new Map()
+map.set('IN',"India")
+map.set('USA',"United States of America")
+map.set('FR',"France")
+map.set('IN',"India")
+
+// console.log(map)
+
+for (const [key, values] of map) {
+    console.log(key , ':-' ,values);
+    
+}
+
+
+const myobject = {
+    game1 : 'NFS', 
+    game2 : 'Sipderman'
+}
+
+for (const [key , values ] of myobject){
+    console.log(key , ':-' , values);
+    
+}
