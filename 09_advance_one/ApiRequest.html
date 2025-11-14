@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .card {
+            width: 250px;
+            background: #333;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Click</button>
+
+    <div id="card"></div>
+
+<script>
+    const btn = document.querySelector("#btn");
+    const cardDiv = document.querySelector("#card");
+
+    btn.addEventListener("click", function() {
+
+        const requestUrl = 'https://api.github.com/users/tushaljadhav'
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('GET', requestUrl);
+
+        xhr.onreadystatechange = function() {
+
+            if (xhr.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+
+                // Creating card using data object
+                cardDiv.innerHTML = `
+                    <div class="card">
+                        <img src="${data.avatar_url}" alt="Profile Image">
+                        <h3>${data.login}</h3>
+                        <p>Followers: ${data.followers}</p>
+                    </div>
+                `;
+            }
+        };
+
+        xhr.send();
+    });
+</script>
+
+</body>
+</html>
